@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      width: 680px;
+      margin: 0 auto;
+      position: relative; /* 添加按钮定位所需的position:relative */
+    }
+
+    .full-page-image {
+      width: 100%;
+    }
+
+    .button-icon {
+      position: absolute;
+      bottom: 20px; /* 将按钮置于底部 20 像素的位置 */
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer; /* 鼠标悬停时显示为指示链接的光标 */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .options-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+    }
+
+    .option-box {
+      width: 30%;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .option-box:hover {
+      background-color: #ddd;
+    }
+  </style>
+  <script>
+    // 函数处理按钮点击事件并跳转到相应页面
+    function navigateToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img src="../img/yinru.png" class="full-page-image">
+    <h1>雪虎指南</h1>
+    <div class="options-container">
+      <div class="option-box" onclick="navigateToPage('introduction.html')">雪虎介绍</div>
+      <div class="option-box" onclick="navigateToPage('endangered-info.html')">雪虎濒危信息</div>
+      <div class="option-box" onclick="navigateToPage('learn-more.html')">了解更多</div>
+    </div>
+  </div>
+</body>
+</html>

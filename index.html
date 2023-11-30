@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 680px;
+      margin: 0 auto;
+      position: relative; /* Added position:relative for button positioning */
+    }
+
+    .full-page-image {
+      width: 100%;
+    }
+
+    .button-icon {
+      position: absolute;
+      margin-top: 1000px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer; /* Added cursor:pointer for mouse hover effect */
+    }
+  </style>
+  <script>
+    // Function to handle button click and navigate to a new page
+    function navigateToPage() {
+      window.location.href = "new_page.html";
+      // Replace "new_page.html" with the desired URL of the destination page
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img src="yinru.png" class="full-page-image">
+    <img src="img/anniu.png" class="button-icon" onclick="navigateToPage()">
+  </div>
+</body>
+</html>
+
+
+
